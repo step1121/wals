@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+header {
+  background-color: #EC715F;
+  height: 70px;
+  width: 100%;
+}
+
+.header-main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-logo{
+  height: 70px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item a {
+  color: #FAFAFA;
+}
+
+.nav-list-item {
+  padding: 0 30px;
+  font-size:  16px;
+  list-style: none;
+  width: 120px;
+  line-height: 70px;
+}
