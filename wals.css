@@ -6,9 +6,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
 
 .container{
 	width: 1024px;
@@ -36,6 +33,7 @@ header {
 
 .nav-list-item a {
   color: #FAFAFA;
+  text-decoration: none;
 }
 
 .nav-list-item {
@@ -44,6 +42,7 @@ header {
   list-style: none;
   width: 120px;
   line-height: 70px;
+
 }
 
 .main-visual {
@@ -64,3 +63,161 @@ header {
   color: #FAFAFA;
   padding-top: 10px;
 }
+
+section#portfolio  {
+  background-color: #ECEFF1;
+}
+
+.portfolio-heading {
+  font-size: 32px;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.portfolio-heading::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #EC715F;
+}
+
+.portfolio-text {
+  padding: 30px 0;
+  font-size: 16px;
+  color: #000000;
+  text-align: center
+}
+
+.portfolio-item {
+  width: 920px;
+  display:flex;
+  flex-wrap: wrap;
+  padding-bottom: 90px;
+  margin: 0 auto;
+}
+
+.portfolio-box {
+  height: 250px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-box:nth-child(2),:nth-child(5) {
+  margin: 0 10px;
+}
+
+.portfolio-box:nth-child(n+4) {
+  margin-top: 10px;
+}
+
+.portfolio-box:nth-child(1) {
+  background-image: url(img/sketch.jpg);
+}
+
+.portfolio-box:nth-child(2) {
+  background-image: url(img/websuku.png);
+}
+
+.portfolio-box:nth-child(3) {
+  background-image: url(img/write.jpg);
+}
+
+.portfolio-box:nth-child(4) {
+  background-image: url(img/webcamp.png);
+}
+
+.portfolio-box:nth-child(5) {
+  background-image: url(img/talk.jpg);
+}
+
+.portfolio-box:nth-child(6) {
+  background-image: url(img/webcamp-mother.png);
+}
+
+.feature-heading {
+  font-size: 32px;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.feature-heading::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width:  70px;
+  background-color: #EC715F;
+  margin: 8px auto 0 auto;
+}
+
+.feature-text {
+  text-align: center;
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.feature-box {
+  padding-bottom: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  width: 320px;
+  height: auto;
+  text-align: center;
+  font-size: 60px;
+}
+
+.feature-item:nth-child(2){
+  margin: 0 10px;
+}
+
+.feature-subtitle{
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.subtext{
+  text-align: left;
+  font-size: 16px;
+}
+
+secsion#profile {
+  background-color: #ECEFF1;
+}
+
+.profile-heading {
+  margin-top: 90px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.profile-heading::after{
+  content: "";
+  display: block;
+  height: 3px;
+  width: 70px;
+  background-color: #EC715F;
+  margin: 8px auto 0 auto;
+}
+
+.profile-text {
+  font-size: 16px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.profile-box {
+  display: flex;
+  padding-bottom: 90px;
+  margin: 0 auto;
+}
+
+
+
+
