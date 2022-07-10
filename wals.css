@@ -94,9 +94,9 @@ section#portfolio  {
 .portfolio-item {
   width: 920px;
   display:flex;
-  flex-wrap: wrap;
   padding-bottom: 90px;
   margin: 0 auto;
+  flex-flow: row wrap;
 }
 
 .portfolio-box {
@@ -188,12 +188,12 @@ section#portfolio  {
   font-size: 16px;
 }
 
-secsion#profile {
+section#profile {
   background-color: #ECEFF1;
 }
 
 .profile-heading {
-  margin-top: 90px;
+  padding-top: 90px;
   font-size: 32px;
   text-align: center;
 }
@@ -216,19 +216,19 @@ secsion#profile {
 .profile-box {
   display: flex;
   padding-bottom: 90px;
-  margin: 0 auto;
 }
 
 
 .left-container{
   width: 50%;
-  text-align: center;
 }
 
 .profile-image {
   border-radius:50%;
   width: 250px;
   height: 250px;
+  margin: 0 auto;
+  background-image: url(img/my-icon.jpg)
 }
 
 .right-container {
@@ -321,3 +321,125 @@ footer{
   line-height: 60px;
 }
 
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+	.sp-none{
+		display: none;
+	}
+
+	.left-content{
+		width: 100%;
+	}
+
+	.right-content{
+		width: 100%;
+	}
+
+  header{
+		height: 50px;
+	}
+
+	.head-logo{
+		height: 50px;
+	}
+
+	.menu-box{
+		width: 40px;
+		height: 40px;
+		margin-right: 5%;
+		border: 1px solid #FAFAFA;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin-left: auto;
+	}
+
+	.list-bar{
+		display: block;
+		width: 25px;
+		height: 2px;
+		margin: 5px auto;
+		background-color: #FAFAFA;
+	}
+
+	.list-bar:first-child{
+		margin-top: 10px;
+	}
+
+	.nav-list-item{
+		display: none;
+	}
+
+	.main-visual{
+	  background-image: url(img/code.png);
+	  width: 100%;
+	  height: 650px;
+	  background-size: cover;
+    background-position: center;
+	}
+
+	.main-visual-text {
+	  font-size: 40px;
+	}
+
+	.main-visual-name {
+	  font-size: 18px;
+	}
+
+	.portforlio {
+	  width: 90%;
+	}
+
+  .portfolio-item {
+    width: 300px;
+  }
+
+  .portfolio-box:nth-child(odd) {
+    display: none;
+  }
+
+  .portfolio-box {
+    margin-right: 0;
+  }
+
+  .portfolio-box:nth-child(2){
+    margin: 0;
+  }
+
+  .feature-box {
+    width: 320px;
+  }
+
+  .profile-box{
+    text-align: center;
+    flex-flow: row wrap;
+  }
+
+  .left-container {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .right-container {
+    width: 100%;
+  }
+
+  .contact-box {
+    flex-flow: row wrap;
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-line {
+    width: 100%;
+  }
+
+  .contact-image{
+    width: 100%;
+    margin-top: 20px
+  }
+
+}
